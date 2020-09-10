@@ -90,7 +90,7 @@ async function findDownload(UrlModel, identifier){
 async function downloadScreenshot(url, imgLink, fileName, assignmentId){
   console.log('starting download of ' + imgLink);
   //start browser
-  const browser = await puppeteer.launch({ executablePath: "./node_modules/puppeteer/.local-chromium/win64-686378/chrome-win/chrome.exe"});
+  const browser = await puppeteer.launch();
   //make a new page
   const page = await browser.newPage();
   //make page bigger
